@@ -24,7 +24,7 @@ and then some time later your app is running in production and somebody asked yo
 
 
 now you have to extract data from text ...
-it can be done, there's lots of tools to in gest log messages, but if you go back up , we had the information, it was separated !
+it can be done, there's lots of tools to in gest log messages, but if you go back up , we had the information, it was separated ! (logstash, kibana ... )
 
  it's silly, it was well separated in the first place : 
 
@@ -37,6 +37,18 @@ Log Messages -> Log Events = "structured logging" ...
 + message template 
 
 (pictures + explanations from messagetemplates.org)
+
+
+Keep formatting for later
+
+
+This is the idea behing the open source .NET Library Serilog (but several others on other platforms too ;) )
+
+Standards "sinks" like console, text etc ... but it gets interesting when you can preserve the structure
+ex : 
+document databases (mongo) , or relational databases like postgres that support json columns , or into centralized logging platforms like Logstash or Splunk .... 
+
+
 
 
 
